@@ -22,16 +22,9 @@ const OTPValidation = () => {
 
     const { control,
         handleSubmit,
-        setValue,
         formState: { errors } } = form;
 
 
-    useEffect(() => {
-        const storedUserData = JSON.parse(localStorage.getItem("userDetails") || "{}");
-        if (storedUserData.email) {
-            setValue("email", storedUserData.email);
-        }
-    }, [setValue]);
 
     useEffect(() => {
         if (isOtpRequested && timer > 0) {
