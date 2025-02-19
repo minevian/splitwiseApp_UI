@@ -50,4 +50,10 @@ export interface IverifyOtp{
 export interface IVerifyOtpResponse{
     success:boolean;
     message:string;
+    data:
+    |
+    {
+        email:string
+    }
+    | null
 }

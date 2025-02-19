@@ -1,11 +1,11 @@
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import RegistrationForm from "./component/RegistrationForm";
+import OTPValidation from "./component/OTPValidation";
 
 function App() {
   return (
     <div>
-      <RegistrationForm />
+      <OTPValidation/>
       <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
